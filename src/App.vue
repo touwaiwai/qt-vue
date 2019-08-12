@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <qheader></qheader>
-		<!-- <sbanner></sbanner> -->
-    <router-view></router-view>  
-		 
-    <foot></foot>
+     
+		<qheader></qheader>
+		
+		  <foot></foot>
+    <router-view></router-view> 
   </div>
 </template>
 
@@ -21,7 +21,8 @@ export default {
 		}
 	},
 	components:{
-	      qheader
+	      qheader ,
+		  foot
 	}
 }
 </script>

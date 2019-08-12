@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import qheader from '@/components/public/qheader'
 import open from '@/components/lihaosong/open'
 import PersonalCenter from '@/components/PersonalCenter/PersonalCenter'
+
 // import 
 Vue.use(Router)
 

@@ -25,7 +25,7 @@
 	    <!--	播放及进度条-->
 	    <div class="player">
 	        <div class="progressbar">
-	
+
 	        </div>
 	<!--        播放-->
 	        <div class="transmit">
@@ -36,7 +36,7 @@
 	            <div class="bf">
 	                <i class="iconfont icon-shangyiqu"></i>
 	                <i id="denghao" class="iconfont icon-bofang1"></i>
-	
+
 	<!--                <i class="iconfont icon-bofang2"></i>-->
 	                <i class="iconfont icon-shangyiqu-copy"></i>
 	            </div>
@@ -54,15 +54,15 @@
 	    </div>
 	    <!--	相关推荐-->
 	    <div class="nominate">
-	
+
 	    </div>
 	    <!--	横向盒子-->
 	    <div class="h-bigbox">
-	
+
 	    </div>
 	    <!--	评论-->
 	    <div class="observer">
-	
+
 	    </div>
 	</div>
 </template>
@@ -77,13 +77,16 @@
 				}
 			},
 			components:{
-			      // qheader 
-				 
-			}	
+			      // qheader
+
+			}
 	}
 </script>
 
 <style scoped>
+
+    /* @import "http://at.alicdn.com/t/font_1344862_t79j60hx45.css"; */
+	@import '../../assets/icofont/iconfont.css';
 	/*header部分*/
 	header{
 	  width: 100%;
@@ -92,14 +95,14 @@
 	  justify-content: space-between;
 	  /*background: blueviolet;*/
 	}
-	
+
 	header .icon-right-copy{
 	  color: #333333;
 	  font-size: .2rem;
 	  font-weight: 900;
 	  line-height:.55rem;
 	  margin-left: .18rem;
-	
+
 	}
 	header .icon-fenxiang{
 	  color: #333333;
@@ -114,9 +117,9 @@
 	  font-weight: 900;
 	  line-height:.55rem;
 	  margin: 0 .22rem;
-	
+
 	}
-	
+
 	/*播放页面*/
 	article{
 	  width: 100%;
@@ -158,7 +161,7 @@
 	  justify-content: center;
 	  align-content: center;
 	  margin: .04rem 0 0 .35rem;
-	
+
 	}
 	.icon-bofang2{
 	  color: #adadad;
@@ -173,7 +176,7 @@
 	  width: 2.82rem;
 	  margin: 0 auto;
 	}
-	
+
 	/*播放及进度条*/
 	.player{
 	  width: 100%;
@@ -188,7 +191,7 @@
 	  display: flex;
 	  justify-content: space-between;
 	  align-content: center;
-	
+
 	}
 	.transmit span{
 	  font-size: .25rem;
@@ -216,7 +219,7 @@
 	  height: .55rem;
 	  line-height: .55rem;
 	  font-size: .17rem;
-	
+
 	}
 	#denghao{
 	  height: .55rem;
@@ -229,7 +232,7 @@
 	  color: white;
 	  font-size:.21rem ;
 	}
-	
+
 	/*专辑*/
 	.special{
 	  width: 100%;
@@ -243,7 +246,7 @@
 	  width: .46rem;
 	  height: .46rem;
 	  margin-left: .18rem;
-	
+
 	}
 	.special p{
 	  font-size: .17rem;
@@ -263,12 +266,12 @@
 	  color: #ff3b43;
 	  padding-top: .09rem;
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	/*相关推荐*/
 	.nominate{
 	  width: 100%;

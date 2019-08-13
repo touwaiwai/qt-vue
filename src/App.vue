@@ -1,28 +1,16 @@
 <template>
   <div id="app">
-
-		<qheader></qheader>
-
-		  <foot></foot>
     <router-view></router-view>
+	<foot></foot>
   </div>
 </template>
 
 <script>
-	import qheader from './components/public/qheader';
-	import foot from './components/public/foot';
-// 	import sbanner from './components/sbanner';
-
+import foot from './components/public/foot';
 export default {
   name: 'App',
-	data:function(){
-		return {
-				datatypes:[]
-		}
-	},
 	components:{
-	      qheader ,
-		  foot
+	      foot
 	}
 }
 </script>
@@ -53,7 +41,7 @@ html,body{
 }
 body{
 	font-family: "黑体";
-
+	background:white;
 	display: -webkit-flex;
 	-webkit-flex-direction:column;
 }

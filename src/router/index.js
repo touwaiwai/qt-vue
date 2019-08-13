@@ -1,19 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import qheader from '@/components/public/qheader'
+import index from '@/view/index'
+import VIP from '@/view/VIP'
+import listen from '@/view/listen'
 import open from '@/components/lihaosong/open'
 import PersonalCenter from '@/components/PersonalCenter/PersonalCenter'
-
-// import 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-	  {
-		  path:"/",
-		  name:"qheader",
-		  compontent:qheader
-	  },
     {
       path: '/hdsave',
       name: 'open',
@@ -24,5 +19,38 @@ export default new Router({
 	  name: 'PersonalCenter',
 	  component: PersonalCenter
 	},
-  ]
+	{
+	  path: '/VIP',
+	  name: 'VIP',
+	  component: VIP
+	},
+	{
+	  path: '/listen',
+	  name: 'listen',
+	  component: listen
+	},
+	{
+	  path: '/index',
+	  name: 'index',
+	  component: index
+// 		children:[
+// 			{
+// 			  path: '/tuijian',
+// 			  name: 'tuijian',
+// 			  component: tuijian
+// 			},
+// 			{
+// 			  path: '/xiaoshuo',
+// 			  name: 'xiaoshuo',
+// 			  component: xiaoshuo
+// 			},
+// 			{
+// 			  path: '/pingshu',
+// 			  name: 'pingshu',
+// 			  component: pingshu
+// 			},
+// 		]
+	},
+	 { path: '/', redirect: '/index' }
+  ] 
 })

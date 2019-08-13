@@ -104,71 +104,10 @@
 
 <style scoped="scoped">
 	@import "../../assets/font_1344570_013fp9a60oe7f/iconfont.css";
-		/* CSS Document */
-			body,
-			p,
-			ul,
-			ol,
-			dl,
-			dd,
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6,
-			input,
-			select,
-			textarea,
-			td {
-				margin: 0;
-				padding: 0;
-			}
-	
-			html {
-				/*font-size: 100px;*/
-	
-				font-size: 26.67vw;
-	
-				/*1vw = 视窗宽度的1% =3.75px
-	
-	?vw = 100px
-	
-	? = 26.67vw*/
-			}
-	
-			/* 圣杯布局(上下固定,中间滚动) */
-			html,
-			body {
-				height: 100%;
-			}
-	
-			body {
-				font-family: "微软雅黑";
-				background: #f5f5f9;
-				display: -webkit-flex;
-				-webkit-flex-direction: column;
-			}
-	
-	
-			ul,
-			ol,
-			li {
-				list-style: none;
-			}
-	
-			a {
-				text-decoration: none;
-			}
-	
-			img {
-				border: 0;
-				display: block;
-			}
 	
 			.PersonalCenter {
 				height: 100%;
-				background: #f8f8f8;
+				background: white;
 			}
 	
 			/* PERson */

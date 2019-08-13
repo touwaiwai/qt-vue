@@ -63,7 +63,10 @@
 	    </div>
 	    <!--	横向盒子-->
 	    <div class="play-bigbox">
-        div.
+        <div>
+<!--          横三-->
+        </div>
+        <a href="#"><p>查看更多</p></a>
 	    </div>
 	    <!--	评论-->
 	    <div class="observer">

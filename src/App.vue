@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-     
+
 		<qheader></qheader>
-		
+
 		  <foot></foot>
-    <router-view></router-view> 
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 	import qheader from './components/public/qheader';
 	import foot from './components/public/foot';
 // 	import sbanner from './components/sbanner';
-	
+
 export default {
   name: 'App',
 	data:function(){
@@ -53,7 +53,7 @@ html,body{
 }
 body{
 	font-family: "黑体";
-	background: #f5f5f9;
+
 	display: -webkit-flex;
 	-webkit-flex-direction:column;
 }

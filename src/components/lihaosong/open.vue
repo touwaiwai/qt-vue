@@ -53,12 +53,17 @@
 	        <span>收藏专<br/>辑</span>
 	    </div>
 	    <!--	相关推荐-->
-	    <div class="nominate">
-
+	    <div class="nominat">
+        <h3>相关推荐</h3>
+        <div class="chunk">
+          <p>单田芳</p>
+          <p>开封府</p>
+          <p>热门推荐</p>
+        </div>
 	    </div>
 	    <!--	横向盒子-->
-	    <div class="h-bigbox">
-
+	    <div class="play-bigbox">
+        div.
 	    </div>
 	    <!--	评论-->
 	    <div class="observer">
@@ -85,8 +90,8 @@
 
 <style scoped>
 
-    /* @import "http://at.alicdn.com/t/font_1344862_t79j60hx45.css"; */
-	@import '../../assets/icofont/iconfont.css';
+     @import "http://at.alicdn.com/t/font_1344862_t79j60hx45.css";
+	/*@import '../../assets/icofont/iconfont.css';*/
 	/*header部分*/
 	header{
 	  width: 100%;
@@ -267,17 +272,32 @@
 	  padding-top: .09rem;
 	}
 
-
-
-
-
-
 	/*相关推荐*/
-	.nominate{
+	.nominat{
 	  width: 100%;
 	  height: .975rem;
-	  background: #b648ff;
+    margin-left: .18rem;
 	}
+  .nominat h3{
+    font-size: .25rem;
+    margin-top: .14rem;
+  }
+  .chunk{
+    margin-top: .15rem;
+    display: flex;
+  }
+  .chunk p {
+    font-size: .15rem;
+    padding: .05rem  .12rem;
+    margin: .05rem;
+    border: #ececec solid 1px;
+    border-radius: 15px;
+
+  }
+
+
+
+
 	/*横向盒子*/
 	.h-bigbox{
 	  width: 100%;

@@ -7,25 +7,31 @@
 		<qtbanner :imglist='imglist'></qtbanner>
 		<fenlei></fenlei>
 		<need></need>
+		<div v-for="n in 10">
+			<v-three></v-three>
+			<a-three ></a-three>
+		</div>
 	</div>
 </template>
 
 <script>
-	import qheader from '@/components/public/qheader';
-	import search from '@/components/public/search';
-	import qtbanner from '@/components/public/qtbanner';
-	import fenlei from '@/components/public/fenlei';
-	import need from '@/view/index/need';
+	import qheader from '@/components/public/qheader'
+	import search from '@/components/public/search'
+	import qtbanner from '@/components/public/qtbanner'
+	import fenlei from '@/components/public/fenlei'
+	import need from '@/view/index/need'
+	import vThree from '@/components/public/vThree'
+	import aThree from '@/components/public/aThree'
 	
 export default {
 	name: 'index',
 	data:function(){
 		return {
 				imglist:['./assets/img/banner/1.jpg','./assets/img/banner/2.jpg','./assets/img/banner/3.jpg']
-		}
+				}
 	},
 	components:{
-	      qheader,search,qtbanner,fenlei,need
+	      qheader,search,qtbanner,fenlei,need,vThree,aThree
 	}
 }
 </script>

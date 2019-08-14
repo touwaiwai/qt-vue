@@ -2,6 +2,7 @@
   <footer>
     <router-link v-for="(item,index) in tabber" :to="item.path" :key="index" class="top">
 			<img src="../../assets/img/foot/index.png" alt="">
+			<!-- <img :src="item.pic2" alt=""> -->
       <span :style="{color:($route.path==item.path?'#ff0000':'#000000')}">{{item.title}}</span>
     </router-link>
   </footer>
@@ -58,31 +59,18 @@ footer {
   background: white;
   position: fixed;
   bottom: 0;
+	left: 0;
   z-index: 1;
 }
-a {
-	
- height: 0.5rem;
-}
-i {
-  display: block;
-  width: 0.24rem;
-  height: 0.22rem;
-  text-align: center;
-  background-size: 0.24rem 0.22rem;
-}
-.top:nth-child(3)>i{
-  display: block;
-  width: 0.42rem;
-  height: 0.4rem;
-  text-align: center;
-  background-size: 0.4rem 0.4rem;
+.top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 span {
+	display: block;
   font-size: 0.11rem;
-  text-align: center;
-  position: absolute;
-top: 35px;
+	top: 35px;
 }
 img{
 	width: 0.22rem;

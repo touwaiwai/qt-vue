@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+	<p class="kong"></p>
 	<foot></foot>
   </div>
 </template>
@@ -55,6 +56,8 @@ img{
 	border:0;
 	display: block;
 }
-
+.kong{
+	margin-bottom: .5rem;
+}
 
 </style>

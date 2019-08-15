@@ -1,47 +1,23 @@
 <template>
 	<div class="athree">
-		<div class="dayu">
-			<h3>评书</h3>
-			<span class="dayu">></span>
-		</div>
-		<div class="imggroup">
-			<div class="sign">
-				<div class="signleft"><img src="../../assets/img/tuijian/a1.jpg" alt=""></div>
-				<div class="signright">
-					<p>袁阔成：敌后武工队</p>
-					<p>真实历史改编，深入敌后的一支奇兵</p>
-					<p>
-						<img src="../../assets/img/tuijian/loop.png" alt="">
-						<span>2417.0万</span>
-						<img src="../../assets/img/tuijian/set.png" alt="">
-						<span>36</span>
-					</p>
-				</div>
+		<div v-for="(item,index) in datas.data" :key='index'>
+			<div class="dayu">
+				<h3>{{item.id}}</h3>
+				<span class="dayu">></span>
 			</div>
-			<div class="sign">
-				<div class="signleft"><img src="../../assets/img/tuijian/a1.jpg" alt=""></div>
-				<div class="signright">
-					<p>袁阔成：敌后武工队</p>
-					<p>真实历史改编，深入敌后的一支奇兵</p>
-					<p>
-						<img src="../../assets/img/tuijian/loop.png" alt="">
-						<span>2417.0万</span>
-						<img src="../../assets/img/tuijian/set.png" alt="">
-						<span>36</span>
-					</p>
-				</div>
-			</div>
-			<div class="sign">
-				<div class="signleft"><img src="../../assets/img/tuijian/a1.jpg" alt=""></div>
-				<div class="signright">
-					<p>袁阔成：敌后武工队</p>
-					<p>真实历史改编，深入敌后的一支奇兵</p>
-					<p class="lastp">
-						<img src="../../assets/img/tuijian/loop.png" alt="">
-						<span>2417.0万</span>
-						<img src="../../assets/img/tuijian/set.png" alt="">
-						<span>36</span>
-					</p>
+			<div class="imggroup">
+				<div class="sign" v-for='(text,index) in item.content' :key='index'>
+					<div class="signleft"><img src="../../assets/img/tuijian/a1.jpg" alt=""></div>
+					<div class="signright">
+						<p>{{text.title}}</p>
+						<p>{{text.text}}</p>
+						<p>
+							<img src="../../assets/img/tuijian/loop.png" alt="">
+							<span>{{text.loopnumber}}</span>
+							<img src="../../assets/img/tuijian/set.png" alt="">
+							<span>{{text.setnumber}}</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -90,11 +66,16 @@
 		margin-right: 15px;
 	}
 	.signright{
+		width: 2.25rem;
 		float: left;
 		padding-top: 6px;
 	}
+	.signright p{
+		width: 100%;
+		overflow: hidden;
+	}
 	.signright p:first-child{
-		font-size: .2rem;
+		font-size: 16px;
 		margin-bottom: 5px;
 	}
 	.signright p:nth-child(2){

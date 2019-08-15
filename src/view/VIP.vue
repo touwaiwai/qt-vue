@@ -18,6 +18,7 @@
     components:{
       vipheader,vipmain
     }
+		
 	}
 </script>
 

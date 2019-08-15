@@ -1,9 +1,9 @@
 <template>
   <footer>
-    <router-link v-for="(item,index) in tabber" :to="item.path" :key="index" class="top">
-			<img src="../../assets/img/foot/index.png" alt="">
-			<!-- <img :src="item.pic2" alt=""> -->
-      <span :style="{color:($route.path==item.path?'#ff0000':'#000000')}">{{item.title}}</span>
+    <router-link v-for="(item,index) in tabber" :to="item.path" :key="index" class="top" activeClass="active">
+			<!-- <img src="../../assets/img/foot/index.png" alt=""> -->
+			<img :src="imgshow==item.path?item.pic1:item.pic2" alt="">
+      <span>{{item.title}}</span>
     </router-link>
   </footer>
 </template>
@@ -16,36 +16,40 @@ export default {
         {
           title: "首页",
           path: "/index",
-          pic2: "../../assets/img/foot/index.png",
-          pic1: "../../static/img/foot/index1.png"
+          pic2: "../../../static/img/foot/index.png",
+          pic1: "../../../static/img/foot/index1.png"
         },
         {
           title: "超级会员",
           path: "/VIP",
-          pic2: "../../assets/img/foot/VIP.png",
-          pic1: "../../static/img/foot/VIP1.png"
+          pic2: "../../../static/img/foot/VIP.png",
+          pic1: "../../../static/img/foot/VIP1.png"
         },
         {
           path: "/hdsave",
-          pic1: "../../assets/img/foot/video.png",
-          pic2: "../../static/img/foot/video1.png"
+          pic2: "../../../static/img/foot/video.png",
+          pic1: "../../../static/img/foot/video1.png"
         },
         {
           title: "我听",
           path: "/listen",
-          pic2: "../../assets/img/foot/listen.png",
-          pic1: "../../static/img/foot/listen1.png"
+          pic2: "../../../static/img/foot/listen.png",
+          pic1: "../../../static/img/foot/listen1.png"
         },
         {
           title: "个人中心",
           path: "/mine",
-          pic2: "../../assets/img/foot/mine.png",
-          pic1: "../../static/img/foot/mine1.png"
+          pic2: "../../../static/img/foot/mine.png",
+          pic1: "../../../static/img/foot/mine1.png"
         }
       ]
     };
   },
-  methods: {}
+  computed:{
+		imgshow(){
+			return this.$route.matched[0].path;
+		}
+	}
 };
 </script>
 
@@ -66,6 +70,10 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.active{
+	color:red;
+	font-size:16px;
 }
 span {
 	display: block;

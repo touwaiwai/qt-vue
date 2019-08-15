@@ -1,21 +1,15 @@
 <template>
 	<div class="vthree">
-		<div class="dayu">
-			<h3>历史</h3>
-			<span class="dayu">></span>
-		</div>
-		<div class="imggroup">
-			<div class="sign">
-				<img src="../../assets/img/tuijian/a1.jpg" alt="">
-				<span>隋朝为何短命？听蒙曼讲</span>
+		<div v-for="item in datas.data" :key='item.img'>
+			<div class="dayu">
+				<h3>{{item.id}}</h3>
+				<span class="dayu">></span>
 			</div>
-			<div class="sign">
-				<img src="../../assets/img/tuijian/a1.jpg" alt="">
-				<span>史上最牛老丈人 3个女婿是皇帝</span>
-			</div>
-			<div class="sign">
-				<img src="../../assets/img/tuijian/a1.jpg" alt="">
-				<span>当年明月为你讲述明朝那些事儿</span>
+			<div class="imggroup">
+				<div class="sign" v-for='(text,index) in item.content' :key='index'>
+					<img src="../../assets/img/tuijian/a1.jpg" alt="">
+					<span>{{text.title}}</span>
+				</div>
 			</div>
 		</div>
 	</div>

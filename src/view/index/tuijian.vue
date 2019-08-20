@@ -2,9 +2,8 @@
 	<div>
 		<qtbanner :imglist='imglist'></qtbanner>
 		<fenlei :navlist='navlist'></fenlei>
-		
-			<v-three :datas="datas"></v-three>
-			<a-three :datas="datas"></a-three>
+		<v-three :datas="datas"></v-three>
+		<a-three :datas="datas"></a-three>
 
 	</div>
 </template>
@@ -18,7 +17,13 @@
 		name: 'tuijian',
 		data:function(){
 			return {
-					imglist:['./assets/img/banner/1.jpg','./assets/img/banner/2.jpg','./assets/img/banner/3.jpg'],
+					imglist:[
+						'../../static/yuimg/wh.jpg',
+						'../../static/yuimg/wenh.jpg',
+						'../../static/yuimg/wenhu.jpg',
+						'../../static/yuimg/wenhua.jpg',
+						'../../static/yuimg/b.jpg',
+					],
 					navlist:[{
 						title: "小说精品",
 						path: "/",
@@ -45,11 +50,7 @@
 						id: '../../../static/img/tuijian/tuijian-5.jpg'
 					}
 				],
-				datas:{
-	// imglist 此为轮播图的图片数组，里面为图片资源路径
-	"imglist":["1","2","3","4","5","6"],
-	//data 为主题内容
-	"data":[
+				datas:[
 			{
 			"id":"个性推荐",
 			"content":[
@@ -103,7 +104,6 @@
 			]
 		}	
 	]
-}
 					}
 		},
 		components:{

@@ -6,12 +6,15 @@
 		</div>
 		<div class="kong"></div>
 		<router-view></router-view>
+		<p id="kong"></p>
+		<foot></foot>
 	</div>
 </template>
 
 <script>
 	import qheader from '@/components/public/qheader'
 	import search from '@/components/public/search'
+	import foot from '@/components/public/foot'
 	
 export default {
 	name: 'index',
@@ -20,7 +23,7 @@ export default {
 				}
 	},
 	components:{
-	      qheader,search
+	      qheader,search,foot
 	}
 }
 </script>
@@ -35,5 +38,8 @@ export default {
 	}
 	.kong{
 		margin-top:.85rem;
+	}
+	#kong{
+		margin-bottom: .5rem;
 	}
 </style>

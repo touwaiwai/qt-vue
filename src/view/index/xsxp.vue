@@ -16,38 +16,40 @@
 		name:'xsxp',
 		data(){
 			return {
-				imglist:['1','2','3'],
+				imglist:[
+					'../../static/yuimg/wh.jpg',
+					'../../static/yuimg/wenh.jpg',
+					'../../static/yuimg/wenhu.jpg',
+					'../../static/yuimg/wenhua.jpg',
+					'../../static/yuimg/b.jpg',
+				],
 				navlist:[{
 						title: "最热相声",
 						path: "/",
-						id: '../../../static/img/xsxp/xsxp-1.jpg'
+						id: '../../static/img/xsxp/xsxp-1.jpg'
 					},
 					{
 						title: "大师典藏",
 						path: "/VIP",
-						id: '../../../static/img/xsxp/xsxp-2.jpg'
+						id: '../../static/img/xsxp/xsxp-2.jpg'
 					},
 					{
 						title: "郭德纲",
 						path: "/hdsave",
-						id: '../../../static/img/xsxp/xsxp-3.jpg'
+						id: '../../static/img/xsxp/xsxp-3.jpg'
 					},
 					{
 						title: "爆笑小品",
 						path: "/listen",
-						id: '../../../static/img/xsxp/xsxp-4.jpg'
+						id: '../../static/img/xsxp/xsxp-4.jpg'
 					},
 					{
 						title: "经典必听",
 						path: "/mine",
-						id: '../../../static/img/xsxp/xsxp-5.jpg'
+						id: '../../static/img/xsxp/xsxp-5.jpg'
 					}
 				],
-				datas:{
-					// imglist 此为轮播图的图片数组，里面为图片资源路径
-					"imglist":["1","2","3","4","5","6"],
-					//data 为主题内容
-					"data":[
+				datas:[
 							{
 							"id":"个性推荐",
 							"content":[
@@ -101,7 +103,7 @@
 							]
 						}	
 					]
-				}
+				
 			}
 		},
 		components:{

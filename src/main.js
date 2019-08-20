@@ -13,3 +13,11 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+Vue.prototype.fun=function(str){
+	
+// 		for(let i=0;i<str.s.length;i++){
+// 			ul += "<li>" + str.s[i] + "</li>";
+// 		}
+// 		return ul;
+console.log(str);
+}

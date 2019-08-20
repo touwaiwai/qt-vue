@@ -12,10 +12,7 @@
 			<router-link class="zi" v-for="(item,index) in tabList" :to="item.id" :key="index" 
 				v-on:click="add(index)" activeClass="active">
 			{{item.title}}                                           
-			 </router-link>
-			 
-			 
-			 
+			 </router-link> 
 		</ul>
 		<router-view></router-view>
 		<div class="kong"></div>

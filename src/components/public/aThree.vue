@@ -1,13 +1,13 @@
 <template>
 	<div class="athree">
-		<div v-for="(item,index) in datas.data" :key='index'>
+		<div v-for="(item,index) in datas" :key='index'>
 			<div class="dayu">
 				<h3>{{item.id}}</h3>
 				<span class="dayu">></span>
 			</div>
 			<div class="imggroup">
 				<div class="sign" v-for='(text,index) in item.content' :key='index'>
-					<div class="signleft"><img src="../../assets/img/tuijian/a1.jpg" alt=""></div>
+					<div class="signleft"><img :src="text.img" alt=""></div>
 					<div class="signright">
 						<p>{{text.title}}</p>
 						<p>{{text.text}}</p>

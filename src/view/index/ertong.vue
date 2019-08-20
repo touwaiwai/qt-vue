@@ -48,11 +48,7 @@
 						id: '../../../static/img/ertong/5.png'
 					}
 				],
-				datas:{
-					// imglist 此为轮播图的图片数组，里面为图片资源路径
-					"imglist":["1","2","3","4","5","6"],
-					//data 为主题内容
-					"data":[
+				datas:[
 							{
 							"id":"个性推荐",
 							"content":[
@@ -106,7 +102,7 @@
 							]
 						}	
 					]
-				}
+				
 			}
 		},
 		components:{

@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<input class="search" type="text" :placeholder="placeholder">
+		<router-link to="/searchContent">
+			<input class="search" type="text" :placeholder="placeholder">
+		</router-link>
 		<img  class="history"  src="../../assets/img/search/history.png"/>
 		<img class="ia"  src="../../assets/img/search/search.png"/>
 	</div>
@@ -32,6 +34,7 @@
 		text-align: center;
 		border: 0;
 		float:left;
+		outline: none;
 	}
 	.history{
 		width: .22rem;

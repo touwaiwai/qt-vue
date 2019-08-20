@@ -1,10 +1,11 @@
 <template>
 	<div>
 		<div class="dlls">
-			<p>登录可同步云端已购 、收藏 、历史等记录<span>登录</span></p>
+			<p @click="godenglu">登录可同步云端已购 、收藏 、历史等记录<span>登录</span></p>
 		</div>
 
 		<div class="listgrop">
+			<router-link to='/xiazai'>
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/1.jpg" alt="">
 				<span class="iteminfo">
@@ -12,6 +13,9 @@
 					<span class="iconfont icon-dianji"></span>
 				</span>
 			</a>
+			</router-link>
+			
+			<router-link to='/shoucang'>
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/2.jpg" alt="">
 				<span class="iteminfo">
@@ -19,6 +23,9 @@
 					<span class="iconfont icon-dianji"></span>
 				</span>
 			</a>
+			</router-link>
+			
+			<router-link to='/stlishi'>
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/3.jpg" alt="">
 				<span class="iteminfo">
@@ -26,6 +33,9 @@
 					<span class="iconfont icon-dianji"></span>
 				</span>
 			</a>
+			</router-link>
+			
+			<router-link to='/denglu'>
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/4.jpg" alt="">
 				<span class="iteminfo">
@@ -34,6 +44,8 @@
 
 				</span>
 			</a>
+			</router-link>
+
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/5.jpg" alt="">
 				<span class="iteminfo">
@@ -208,13 +220,18 @@
 
 <script>
 	export default{
-				name:"listenCenter",
-				data:function(){
-					return{
-						
-					}
-				}
+		name:"listenCenter",
+		data:function(){
+			return{
+				
 			}
+		},
+		methods:{
+			godenglu(){
+				this.$router.push("/denglu")
+			}
+		}
+	}
 </script>
 
 <style scoped="scoped">

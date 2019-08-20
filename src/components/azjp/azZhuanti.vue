@@ -26,7 +26,7 @@
 	}
 	
 	.azZhuanti{
-		padding-top:0.2rem;
+		padding-top:0rem;
 		padding-bottom: 0.1rem;
 		display: -webkit-flex;
 		justify-content: space-around;

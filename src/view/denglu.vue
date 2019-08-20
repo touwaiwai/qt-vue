@@ -45,11 +45,7 @@
 			back(){
 				history.back();
 			}
-		}data() {
-			return {
-				key: value
-			}
-		},
+		}
 	}
 </script>
 

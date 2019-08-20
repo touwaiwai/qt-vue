@@ -2,11 +2,11 @@
 	<div class="shengbei">
 	    <!-- header部分头部 -->
 			<!-- <pinglun></pinglun> -->
-	    <header>
+	    <div class="hdsan">
 	        <a href="#"><i class="iconfont icon-right-copy" @click="fanhui"></i></a>
 	        <a href="#"><i class="iconfont icon-fenxiang"></i></a>
 	        <a href="#"><i class="iconfont icon-sandian"></i></a>
-	    </header>
+	    </div>
 	    <!-- 播放页面 -->
 	    <article>
 	        <h2>三侠五义  第一回</h2>
@@ -207,15 +207,16 @@
 <style scoped>
 @import "../../assets/icofont/iconfont.css";
 	/*header部分*/
-	header{
+	.hdsan{
 	  width: 100%;
-	  height: .55rem;
+	  /* height: .55rem; */
 	  display: flex;
 	  justify-content: space-between;
 	  /*background: blueviolet;*/
+		/* margin-top: -0.55rem; */
 	}
 	
-	header .icon-right-copy{
+	.hdsan .icon-right-copy{
 	  color: #333333;
 	  font-size: .2rem;
 	  font-weight: 900;
@@ -223,14 +224,14 @@
 	  margin-left: .18rem;
 	
 	}
-	header .icon-fenxiang{
+	.hdsan .icon-fenxiang{
 	  color: #333333;
 	  font-size: .2rem;
 	  font-weight: 900;
 	  line-height:.55rem;
 	  margin-left: 2.45rem;
 	}
-	header .icon-sandian{
+	.hdsan .icon-sandian{
 	  color: #333333;
 	  font-size: .2rem;
 	  font-weight: 900;
@@ -242,7 +243,7 @@
 	/*播放页面*/
 	article{
 	  width: 100%;
-	  /*height: 3.25rem;*/
+	  /* height: 3.25rem; */
 	  margin: 0 auto;
 	}
 	article h2{

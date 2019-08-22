@@ -1,62 +1,66 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/view/index'
-import VIP from '@/view/VIP'
+import index from '@/view/index' 
+import VIP from '@/view/VIP'//超级会员页面
 
-import listen from '@/view/listen'
-import xiazai from '@/view/xiazai'
-import shoucang from '@/view/shoucang'
-import stlishi from '@/view/stlishi'
+import listen from '@/view/listen'//我听页面
+import xiazai from '@/view/xiazai'//我听页面-->我的下载
+import shoucang from '@/view/shoucang'//我听页面-->我的收藏
+import stlishi from '@/view/stlishi'//我听页面-->收听历史
+import wdyigou from '@/view/wdyigou'//我听页面-->我的已购
 
 
 
-import denglu from '@/view/denglu'
-import sjhdenglu from '@/view/sjhdenglu'
-import xgmima from '@/view/xgmima'
+import denglu from '@/view/denglu'//登录页面
+import sjhdenglu from '@/view/sjhdenglu'//手机号登录页面
+import xgmima from '@/view/xgmima'//忘记密码页面
 
 
 import help from '@/view/help'
-import setting from '@/view/setting'
-import lishi from '@/view/index/lishi'
-import allNav from '@/view/allNav'
-import geren from '@/view/geren'
-import searchContent from '@/view/searchContent'
-import searchIndex from '@/view/search/searchIndex'
-import searchDetail from '@/view/search/searchDetail'
-import tuijian from '@/view/index/tuijian'
-import xiaoshuo from '@/view/xiaoshuo'
+import setting from '@/view/setting'//个人中心页面-->设置页面
+import lishi from '@/view/index/lishi'//历史页面
+import allNav from '@/view/allNav'//首页右上角的全部分类
+import geren from '@/view/geren'//个人中心页面-->设置页面-->修改个人资料页面
 
-import aztuijian from '@/view/xiaoshuo/aztuijian'
-import reting from '@/view/xiaoshuo/reting'
-import xiaoshuoman from '@/view/xiaoshuo/xiaoshuoman'
-import xiaoshuowomen from '@/view/xiaoshuo/xiaoshuowomen'
-import womentuijian from '@/view/xiaoshuo/womentuijian'
-import womentchangxiao from '@/view/xiaoshuo/womentchangxiao'
+import searchContent from '@/view/searchContent'//
+import searchIndex from '@/view/search/searchIndex'//搜索页面
+import searchDetail from '@/view/search/searchDetail'//搜索页面-->搜索结果页面
+import tuijian from '@/view/index/tuijian'//推荐页面
+import xiaoshuo from '@/view/xiaoshuo'//小说页面
 
-import detail from '@/view/detail'
-import detailjiemu from '@/view/detail/detailjiemu'
-import detailtuijian from '@/view/detail/detailtuijian'
+import aztuijian from '@/view/xiaoshuo/aztuijian'//小说页面-->推荐（页面打开时默认的是男生页面）
+import reting from '@/view/xiaoshuo/reting'//小说页面-->热听（页面打开时默认的是男生页面）
+import xiaoshuoman from '@/view/xiaoshuo/xiaoshuoman'//小说页面-->男生
+import xiaoshuowomen from '@/view/xiaoshuo/xiaoshuowomen'//小说页面-->女生
+import womentuijian from '@/view/xiaoshuo/womentuijian'//小说页面-->女生-->推荐
+import womentchangxiao from '@/view/xiaoshuo/womentchangxiao'//小说页面-->女生-->畅销
 
-import ertong from '@/view/index/ertong'
-import wenhua from '@/view/wenhua'
-import jiaoyu from '@/view/jiaoyu'
-import pingshu from '@/view/index/pingshu'
-import qinggan from '@/view/index/qinggan'
-import helpshow from '@/view/help/helpshow'
-import elses from '@/view/help/elses'
-import loop from '@/view/help/loop'
-import buy from '@/view/help/buy'
-import sup from '@/view/help/sup'
-import user from '@/view/help/user'
-import xsxp from '@/view/index/xsxp'
+import detail from '@/view/detail'//详情页
+import detailjiemu from '@/view/detail/detailjiemu'//详情页-->节目页面（二级路由）
+import detailtuijian from '@/view/detail/detailtuijian'//详情页-->推荐页面（二级路由）
 
-import open from '@/view/open/open'
-import otuijian from '@/view/open/otuijian'
-import opinglun from '@/view/open/opinglun'
+import ertong from '@/view/index/ertong'//儿童页面
+import wenhua from '@/view/wenhua'//文化页面
+import jiaoyu from '@/view/jiaoyu'//教育页面
+import pingshu from '@/view/index/pingshu'//评书页面
+import qinggan from '@/view/index/qinggan'//情感页面
 
-import PersonalCenter from '@/view/PersonalCenter'
-import dingshi from '@/view/dingshi'
-import yuyue from '@/view/yuyue'
+import PersonalCenter from '@/view/PersonalCenter'//个人中心页面
+import dingshi from '@/view/dingshi'//个人中心页面-->定时关闭页面
+import yuyue from '@/view/yuyue'//个人中心页面-->预约节目页面
+import helpshow from '@/view/help/helpshow'//个人中心页面-->帮助与反馈页面
+import elses from '@/view/help/elses'//个人中心页面-->帮助与反馈页面-->其他问题页面
+import loop from '@/view/help/loop'//个人中心页面-->帮助与反馈页面-->播放问题页面
+import buy from '@/view/help/buy'//个人中心页面-->帮助与反馈页面-->充值或购买问题页面
+import sup from '@/view/help/sup'//个人中心页面-->帮助与反馈页面-->超级会员问题页面
+import user from '@/view/help/user'//个人中心页面-->帮助与反馈页面-->账号问题页面
+import xsxp from '@/view/index/xsxp'//相声小品页面
+
+import open from '@/view/open/open'//底部中间的播放页面（超级会员右边）
+import otuijian from '@/view/open/otuijian'//底部中间的播放页面-->推荐页面（二级路由）
+import opinglun from '@/view/open/opinglun'//底部中间的播放页面-->评论页面（二级路由）
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -163,6 +167,13 @@ export default new Router({
 	  path: '/stlishi',
 	  name: 'stlishi',
 	  component: stlishi,
+		
+	},
+	
+		{
+	  path: '/wdyigou',
+	  name: 'wdyigou',
+	  component: wdyigou,
 		
 	},
 	

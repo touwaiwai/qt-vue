@@ -40,10 +40,12 @@
 				<span>夜间模式</span>
 				<img src="../assets/img-person/azbutton.png" alt="">
 			</div>
+			<router-link to='/dingshi'>
 			<div class="azbox">
 				<span>定时关闭</span>
 				<span>></span>
 			</div>
+			</router-link>
 			</router-link>
 			<div class="azbox">
 				<span>闹钟</span>

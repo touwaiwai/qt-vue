@@ -1,6 +1,6 @@
 <template>
 	<div class="athree">
-		<div v-for="(item,index) in datas" :key='index'>
+		<div v-for="(item,index) in datass" :key='index'>
 			<div class="dayu">
 				<h3>{{item.id}}</h3>
 				<span class="dayu">></span>
@@ -26,7 +26,7 @@
 
 <script>
 	export default{
-		props:['datas'],
+		props:['datass'],
 		name:'vThree'
 	}
 </script>

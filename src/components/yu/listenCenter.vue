@@ -35,7 +35,7 @@
 			</a>
 			</router-link>
 			
-			<router-link to='/denglu'>
+			<router-link to='/wdyigou'>
 			<a class="itemborder item_group itema">
 				<img src="../../assets/yu-img/4.jpg" alt="">
 				<span class="iteminfo">
@@ -59,6 +59,7 @@
 		<div class="mylisten2"><b>猜你喜欢</b></div>
 		<div class="gylike">
 			<div class="recommend-container">
+				<router-link to='/detail'>
 				<div class="recommend-item">
 					<img class="imgd" src="../../assets/yu-img/6.jpg">
 					<div class="desc">【录制跟上文字进度，不定时更新】一手快...</div>
@@ -73,6 +74,7 @@
 						</div>
 					</div>
 				</div>
+				</router-link>
 				<div class="recommend-item">
 					<img class="imgd" src="../../assets/yu-img/10.jpg">
 					<div class="desc">本评书共360回,为完整版《水浒》。本书...</div>

@@ -47,7 +47,7 @@
 	    <div class="special">
 	        <img src="../../assets/img/zhuangji.jpg" alt="">
 	        <p>单田芳 : 三侠五义</p>
-	        <span>收藏专<br/>辑</span>
+	        <span>收藏专辑</span>
 	    </div>
 	    <!-- 互动 -->
 			<ul  class="qt_com">
@@ -195,7 +195,7 @@
 			},
 			components:{
 			     ofoot
-			}	,
+			},
  			methods:{
 			fanhui(){
 				history.back();
@@ -205,15 +205,14 @@
 </script>
 
 <style scoped>
-@import "../../assets/icofont/iconfont.css";
+@import "../../assets/fontico/iconfont.css";
 	/*header部分*/
 	.hdsan{
 	  width: 100%;
 	  /* height: .55rem; */
 	  display: flex;
 	  justify-content: space-between;
-	  /*background: blueviolet;*/
-		/* margin-top: -0.55rem; */
+
 	}
 	
 	.hdsan .icon-right-copy{
@@ -314,7 +313,7 @@
 	  color: #919191 ;
 	  text-align: center;
 	  font-weight:normal;
-	  margin-top: .16rem;
+	  margin-top: .66rem;
 	}
 	.nling {
 	  margin-left: .18rem;
@@ -377,12 +376,13 @@
 	  margin-right: .25rem;
 	}
 	.special span{
-	  height:.48rem ;
+	  height:.20rem ;
 	  width: .85rem;
 	  border-radius: .23rem;
+	  line-height: 0.12rem;
 	  border: #ffd2d2 solid 1px;
 	  margin-right: .18rem;
-	  font-size: .17rem;
+	  font-size: .15rem;
 	  text-align: center;
 	  letter-spacing:.02rem;
 	  color: #ff3b43;

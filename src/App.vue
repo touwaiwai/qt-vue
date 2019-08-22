@@ -54,6 +54,11 @@ img{
 	border:0;
 	display: block;
 }
-
+i,span,b{
+	display: block;
+}
+ input,textarea,select,a:focus {
+     outline: none;
+ }
 
 </style>
